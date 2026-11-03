@@ -13,7 +13,7 @@
         return response.text();
       })
       .then(html => {
-        const updated = html.replace('</body>', '<script src="expected-update.js?v=20261103-2"><\\/script></body>');
+        const updated = html.replace('</body>', '<script src="expected-update.js?v=20261103-3"><' + '/script></body>');
         document.open();
         document.write(updated);
         document.close();
